@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+/* some people prefer * { margin: 0 } */
+/* I prefer line-height: 1.6 */
+body {
+  margin: 0;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.1;
+}
+
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+.hero {
+    background-image: url ("images/Aerial of Downtown Newburgh.jpg");
+    background-size: cover;
+}

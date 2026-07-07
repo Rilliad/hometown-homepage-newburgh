@@ -1,0 +1,198 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+/* CSS Reset*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.1;
+}
+
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+/* Imported Google fonts */
+
+.biorhyme {
+  font-family: "BioRhyme", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.fraunces {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+
+/* Styling begins */
+
+body {
+    text-align: center;
+    font-family: "BioRhyme", serif;
+}
+
+
+/*Hero section: first section*/
+
+#hero {
+    background-image: url("./images/Newburgh.jpg");
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#hero-heading {
+    background: rgba(80, 36, 0, 0.85);
+    font-size: 2rem;
+    padding: 6px 12px;
+    border-radius: 15px;
+}
+
+#hero-subheading {
+    background: rgba(117, 92, 27, 0.8);
+    font-size: 1.2rem;
+    padding: 6px 12px;
+    border-radius: 15px;
+    max-width: 420px;
+}
+
+.newburgh {
+    font-family: "Fraunces", serif;
+}
+
+
+/* Activities section: 2nd section*/
+
+#activities-section {
+    background: rgb(215, 190, 130);
+    padding: 15px 0px;
+    color: rgb(64, 4, 6);
+}
+
+#activities-flex-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.activity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+.activity-img {
+  transition: all 0.8s ease-in;
+  width: 125px;
+  height: 125px;
+  size: contain;
+  border-radius: 50%;
+  margin: 15px auto;
+}
+
+.activity-img:hover {
+  transition: all 0.8s ease-out;
+  width: 160px;
+  height: 160px;
+  transform: scale(1.25);
+  transform-origin: center 70%;
+}
+
+.activity-title {
+    font-size: 1rem;
+    margin: 15px 0px;
+}
+
+.activity-description {
+    font-size: 0.9rem;
+}
+
+
+/* Guide section: 3rd and final section*/
+
+#guide-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    
+    background: rgb(215, 190, 130);
+    color: rgb(64, 4, 6);
+    margin: 50px auto;
+    border: 4px solid rgb(64, 4, 6);
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
+.guide-content {
+    margin-top: 20px;
+}
+
+.guide-heading {
+    margin-bottom: 5px;
+}
+
+.guide-p {
+    font-size: 0.9rem;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px auto;
+}
+
+.HNI-logo {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.lsj-logo {
+    width: 150px;
+    height: 50px;
+}
+
+.HNI-link:hover {
+    scale: 1.2;
+}
+
+.lsj-link:hover {
+    scale: 1.1;
+}
