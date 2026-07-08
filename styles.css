@@ -66,14 +66,40 @@ body {
 /*Hero section: first section*/
 
 #hero {
-    background-image: url("./Images/Newburgh.jpg");
+    background-image: url("./Images/Newburgh-shorter.jpg");
+    background-color: rgb(64, 4, 6);
     background-size: cover;
+    background-repeat: no-repeat;
     height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
+}
+
+@media (max-width: 650px) {
+    #hero {
+        background-image: url("./Images/Newburgh.jpg");
+    }
+}
+
+@media (max-width: 500px) {
+    #hero {
+        height: 250px;
+    }
+}
+
+@media (max-width: 400px) {
+    #hero {
+        height: 200px;
+    }
+}
+
+@media (min-width: 1100px) {
+    #hero {
+        height: 400px;
+    }
 }
 
 #hero-heading {
@@ -152,8 +178,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 300px;
-    
+    max-width: 300px;
     background: rgb(215, 190, 130);
     color: rgb(64, 4, 6);
     margin: 50px auto;
