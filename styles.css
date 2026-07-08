@@ -102,6 +102,12 @@ body {
     }
 }
 
+@media (min-width: 1500px) {
+    #hero {
+        height: 500px;
+    }
+}
+
 #hero-heading {
     background: rgba(80, 36, 0, 0.85);
     font-size: 2rem;
